@@ -205,7 +205,7 @@ def send_mail():
     print("\033[92mПисьмо отправлено\033[0m")
 
 # Формируем текст сообщения
-text = f"В таблице \033[92m{declension(num_rows, forms)}\033[0m"
+text = f"В таблице {declension(num_rows, forms)}"
 declension(num_rows, forms)
 # Выводим информацию о количестве строк в таблице
 print(text)
