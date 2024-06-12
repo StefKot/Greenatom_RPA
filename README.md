@@ -31,5 +31,9 @@
    ![image](https://github.com/StefKot/Greennatom_RPA/assets/96449266/3b0bc8c6-da9f-47fc-b805-ef7de1aea9f2)
 
 
-## Установка требуемых библиотек:
+## Установка требуемых библиотек
     python -m pip install -r requirements.txt
+
+## Версии ОС и ПО
+* `Windows 10`
+* `Python 3.12.4`
