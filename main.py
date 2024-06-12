@@ -184,7 +184,7 @@ def send_mail():
     msg = MIMEMultipart()
     msg['From'] = 'adac-parser@mail.ru'
     msg['To'] = 'adac-parser@mail.ru'
-    msg['Subject'] = 'Тестовое письмо'
+    msg['Subject'] = 'Поддержка RPA'
 
     # Добавляем текст сообщения
     body = text
@@ -202,10 +202,10 @@ def send_mail():
         server.login(smtp_user, smtp_password)
         server.send_message(msg)
 
-    print(" Письмо отправлено")
+    print("\033[92mПисьмо отправлено\033[0m")
 
 # Формируем текст сообщения
-text = f"В таблице {declension(num_rows, forms)}"
+text = f"В таблице \033[92m{declension(num_rows, forms)}\033[0m"
 declension(num_rows, forms)
 # Выводим информацию о количестве строк в таблице
 print(text)

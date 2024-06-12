@@ -1,4 +1,4 @@
 selenium
 openpyxl
-smtplib
+secure-smtplib
 email
