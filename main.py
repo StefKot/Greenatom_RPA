@@ -24,7 +24,7 @@ print("Начинаем работу парсера")
 url = 'https://www.moex.com/ru/derivatives/currency-rate.aspx?currency=USD_RUB#'
 
 
-#Открываем браузер на весь экран
+# Открываем браузер на весь экран
 driver.get(url)
 get_url = driver.current_url
 wait = WebDriverWait(driver, 20) # Ожидание до 20 секунд
