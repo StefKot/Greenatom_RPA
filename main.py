@@ -68,9 +68,9 @@ for row in range(7, len(table_rows)):
     table_cols = table_rows[row].split()
     date = table_cols[0]
     value = table_cols[3]
-    time = table_cols[2]
-    # print(table_cols)
-     # Задаем формат для ячеек с курсом
+    time = table_cols[4]
+    print(table_cols)
+    # Задаем формат для ячеек с курсом
     worksheet.cell(row=row, column=2, value=value).number_format = '# ##0.0000' + ' ' + u'\u20BD'
     worksheet.cell(row=row, column=5, value=value).number_format = '# ##0.0000' + ' ' + u'\u20BD'
     worksheet.cell(row=row, column=7).number_format = '# ##0.0000' + ' ' + u'\u20BD'
@@ -116,8 +116,9 @@ for row in range(7, len(table_rows)):
     table_cols = table_rows[row].split()
     date = table_cols[0]
     value = table_cols[3]
-    time = table_cols[2]
+    time = table_cols[4]
     value_num = float(value)
+    print(table_cols)
     # Заполняем колонки для JPY/RUB
     worksheet.cell(row=row, column=4, value=date)
     worksheet.cell(row=row, column=5, value=value_num)
@@ -206,7 +207,6 @@ def send_mail():
 
 # Формируем текст сообщения
 text = f"В таблице {declension(num_rows, forms)}"
-declension(num_rows, forms)
 # Выводим информацию о количестве строк в таблице
 print(text)
 send_mail()
